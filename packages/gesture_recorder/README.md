@@ -34,7 +34,7 @@ GestureRecorder.start(context);
 final data = await GestureRecorder.stop(context);
 
 /// replay recorded event data
-await GestureDetector.replay(context, data);
+await GestureRecorder.replay(context, data);
 ```
 
 Also, you can observe `RecordState` from `GestureRecorder`.
